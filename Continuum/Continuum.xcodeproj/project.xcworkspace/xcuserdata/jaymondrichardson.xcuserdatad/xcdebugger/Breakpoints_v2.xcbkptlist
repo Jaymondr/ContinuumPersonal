@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3980895E-53BD-413C-BFBB-FA0C0B7D63D3"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56FD718C-7D41-4419-9E2C-15C9FE03C879"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Continuum/Controllers/ViewControllers/AddPostTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "addPostButtonTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C810DA5C-2F71-4047-AFF6-FF992DAA2D50"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Continuum/Controllers/ViewControllers/AddPostTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "addPostButtonTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84A6EC1F-EF2F-49FE-A0E4-7903AA8301C0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Continuum/Controllers/ViewControllers/AddPostTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "addPostButtonTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "84A6EC1F-EF2F-49FE-A0E4-7903AA8301C0 - 6cf62ac75996c09a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Continuum.AddPostTableViewController.addPostButtonTapped(Any) -&gt; ()"
+                  moduleName = "Continuum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaymondrichardson/Desktop/Devmountain%20Projects/Continuum/Continuum/Controllers/ViewControllers/AddPostTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "686">
+               </Location>
+               <Location
+                  uuid = "84A6EC1F-EF2F-49FE-A0E4-7903AA8301C0 - fdc5c2f66f6774b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Continuum.Post&gt;, Continuum.PostError&gt;) -&gt; () in Continuum.AddPostTableViewController.addPostButtonTapped(Any) -&gt; ()"
+                  moduleName = "Continuum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaymondrichardson/Desktop/Devmountain%20Projects/Continuum/Continuum/Controllers/ViewControllers/AddPostTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
