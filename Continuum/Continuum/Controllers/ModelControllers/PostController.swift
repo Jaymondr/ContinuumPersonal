@@ -11,7 +11,6 @@ import UIKit
 
 class PostController {
     
-    
     //MARK: - Properties
     static let shared = PostController() //Singleton Property
     
@@ -20,7 +19,6 @@ class PostController {
 //    var comments: 
     
     //MARK: - Functions
-    
     func addComment(text: String, post: Post, completion: @escaping (Result<Comment, PostError>) -> Void) {
                 let newComment = Comment(text: text, post: post)
         post.comment.append(newComment)
@@ -55,7 +53,6 @@ class PostController {
         } catch let error {
             print("Error in \(#function) : \(error.localizedDescription) \n---\n \(error)")
         }
-        
     }
     
     func loadFromPersistentStore() {
@@ -65,14 +62,7 @@ class PostController {
             
         } catch {
             print("Error loading data drom disk \(error)")
-            
         }
-    }
-    
-    
-    
-    
-    
-    
+    }    
 }
 

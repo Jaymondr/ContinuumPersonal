@@ -24,23 +24,21 @@ class PostListTableViewController: UITableViewController {
     //MARK: - Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor(named: "CellBackground")
+        UITabBar.appearance().isTranslucent = true
+        UINavigationBar.appearance().isTranslucent = true
         postSearchBar.delegate = self
         PostController.shared.loadFromPersistentStore()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         resultsArray = PostController.shared.posts
-        
         tableView.reloadData()
         PostController.shared.loadFromPersistentStore()
     }
     
     // MARK: - Table view data source
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
     }
@@ -56,7 +54,6 @@ class PostListTableViewController: UITableViewController {
     }
     
     // MARK: - Navigation
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetailVC",
            let indexPath = tableView.indexPathForSelectedRow,
@@ -65,11 +62,9 @@ class PostListTableViewController: UITableViewController {
             destinationVC.post = post
         }
     }
-    
 }//End of class
 
 //MARK: - SearchBar Delegate Extension
-
 extension PostListTableViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
@@ -102,5 +97,4 @@ extension PostListTableViewController: UISearchBarDelegate {
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         isSearching = false
     }
-    
 }

@@ -50,7 +50,6 @@ class AddPostTableViewController: UITableViewController {
 }//End of class
 
     //MARK: - Extensions
-
 extension AddPostTableViewController: PhotoSelectorViewControllerDelegate {
     func photoSelectorViewController(image: UIImage) {
         selectedImage = image

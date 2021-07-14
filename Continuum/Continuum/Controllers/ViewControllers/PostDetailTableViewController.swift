@@ -18,9 +18,9 @@ class PostDetailTableViewController: UITableViewController {
     //MARK: - Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-
+        UITabBar.appearance().isTranslucent = true
+        UINavigationBar.appearance().isTranslucent = true
+        view.backgroundColor = UIColor(named: "CellBackground")
     }
     
     //MARK: - Actions
@@ -54,18 +54,17 @@ class PostDetailTableViewController: UITableViewController {
             PostController.shared.addComment(text: commentText, post: post) { (comment) in
             
             }
+            
             DispatchQueue.main.async {
                     self.tableView.reloadData()
             }
         }
-        
         alertController.addAction(cancelAction)
         alertController.addAction(commentAction)
         present(alertController, animated: true) //dont forget
         PostController.shared.loadFromPersistentStore()
     }
     
-
     //MARK: - Property
     var post: Post? {
         didSet {
@@ -75,7 +74,6 @@ class PostDetailTableViewController: UITableViewController {
     }
     
     //MARK: - Functions
-    
     func updateViews() {
         guard let post = post else {return}
         photoImageView.image = post.photo
@@ -83,11 +81,7 @@ class PostDetailTableViewController: UITableViewController {
         PostController.shared.loadFromPersistentStore()
     }
     
-    
-    
     // MARK: - Table view data source
-
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let post = post else {return 0}
         return post.comment.count
@@ -101,9 +95,6 @@ class PostDetailTableViewController: UITableViewController {
         
         cell.textLabel?.text = comment.text
         cell.detailTextLabel?.text = comment.timestamp.formatToString()
-        
-
-
         return cell
     }
 }//End of class

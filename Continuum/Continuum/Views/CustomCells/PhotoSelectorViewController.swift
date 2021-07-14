@@ -38,11 +38,9 @@ class PhotoSelectorViewController: UIViewController {
         placeholderImage.image = UIImage(named: "test")
         presentImagePickerActionSheet()
     }
-    
 }//End of class
 
     //MARK: - Extensions
-
 extension PhotoSelectorViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[.originalImage] as? UIImage { //sets the image as the original data sent?
@@ -85,7 +83,6 @@ extension PhotoSelectorViewController: UIImagePickerControllerDelegate, UINaviga
         }
         alertController.addAction(cancelAction)
         present(alertController, animated: true, completion: nil)
-        
     }
 }//End of Extension
 
