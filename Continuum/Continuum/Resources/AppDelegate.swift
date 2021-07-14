@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  Continuum
 //
-//  Created by DevMountain on 2/11/19.
-//  Copyright © 2019 trevorAdcock. All rights reserved.
+//  Created by Jaymond Richardson on 5/11/21.
 //
 
 import UIKit

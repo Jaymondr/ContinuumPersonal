@@ -3,7 +3,6 @@
 //  Continuum
 //
 //  Created by Jaymond Richardson on 5/11/21.
-//  Copyright © 2021 trevorAdcock. All rights reserved.
 //
 
 import Foundation
