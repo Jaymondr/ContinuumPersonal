@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,6 +32,9 @@
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9819950B-F445-4B09-9A7C-B94AF86E754A_1_105_c" translatesAutoresizingMaskIntoConstraints="NO" id="9Lj-hs-u5a">
                                             <rect key="frame" x="24" y="19" width="327" height="326"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments: (CommentCount)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1g-MP-W0z">
                                             <rect key="frame" x="24" y="435" width="327" height="21"/>
@@ -204,11 +208,11 @@
             </objects>
             <point key="canvasLocation" x="-370" y="77"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="RSt-yF-yIV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fX7-V1-U93" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ROX-ml-GZS"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="newspaper" catalog="system" id="ROX-ml-GZS"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lvB-St-uYY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -331,11 +335,11 @@
             </objects>
             <point key="canvasLocation" x="1301.5999999999999" y="425.93703148425789"/>
         </scene>
-        <!--Item-->
+        <!--Create Post-->
         <scene sceneID="CMC-Ki-ncQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ppA-gE-CnM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="mR8-PG-EGn"/>
+                    <tabBarItem key="tabBarItem" title="Create Post" image="square.and.pencil" catalog="system" selectedImage="square.and.pencil" id="mR8-PG-EGn"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="m8s-X7-9uN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -369,6 +373,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tbs-DO-2WK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="BOy-uu-AfA" firstAttribute="top" secondItem="FXv-RJ-roc" secondAttribute="top" id="BjQ-rs-ifN"/>
@@ -393,7 +398,9 @@
     </scenes>
     <resources>
         <image name="9819950B-F445-4B09-9A7C-B94AF86E754A_1_105_c" width="1024" height="768"/>
+        <image name="newspaper" catalog="system" width="128" height="108"/>
         <image name="spaceEmptyState" width="1024" height="569"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

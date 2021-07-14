@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class Comment {
+class Comment: Codable {
     
     weak var post: Post?
     var text: String

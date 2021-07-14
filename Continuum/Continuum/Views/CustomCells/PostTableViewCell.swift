@@ -30,6 +30,7 @@ class PostTableViewCell: UITableViewCell {
     func updateViews() {
         guard let post = post else {return}
         postImageView.image = post.photo
+        postImageView.layer.cornerRadius = 10
         postCaptionLabel.text = post.caption
         postCommentCountLabel.text = "\(post.comment.count) comments" 
     }

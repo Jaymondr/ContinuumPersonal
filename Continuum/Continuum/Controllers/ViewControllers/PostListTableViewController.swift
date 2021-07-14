@@ -26,6 +26,7 @@ class PostListTableViewController: UITableViewController {
         super.viewDidLoad()
         
         postSearchBar.delegate = self
+        PostController.shared.loadFromPersistentStore()
         
     }
     
@@ -35,6 +36,7 @@ class PostListTableViewController: UITableViewController {
         resultsArray = PostController.shared.posts
         
         tableView.reloadData()
+        PostController.shared.loadFromPersistentStore()
     }
     
     // MARK: - Table view data source

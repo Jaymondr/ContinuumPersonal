@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class Post {
+class Post: Codable {
     var photoData: Data?
     var timestamp: Date
     var caption: String

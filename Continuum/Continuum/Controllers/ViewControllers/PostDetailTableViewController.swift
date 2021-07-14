@@ -62,6 +62,7 @@ class PostDetailTableViewController: UITableViewController {
         alertController.addAction(cancelAction)
         alertController.addAction(commentAction)
         present(alertController, animated: true) //dont forget
+        PostController.shared.loadFromPersistentStore()
     }
     
 
@@ -79,6 +80,7 @@ class PostDetailTableViewController: UITableViewController {
         guard let post = post else {return}
         photoImageView.image = post.photo
         tableView.reloadData()
+        PostController.shared.loadFromPersistentStore()
     }
     
     
